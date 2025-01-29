@@ -1,0 +1,5 @@
+# ignore go binaries & modules cache
+/go-bin/
+/bin/
+/pkg/
+/go/
