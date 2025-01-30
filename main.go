@@ -22,7 +22,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	response := Response{
 		Email:           "jedotoekong@gmail.com",                                  // hng registered email
 		CurrentDatetime: time.Now().UTC().Add(1 * time.Hour).Format(time.RFC3339), //  current datetime in ISO 8601 format (yymmdd h-m-s-ms)
-		GithubURL:       "https://github.com/Jedway/jed-bga.git",                  // my github profile
+		GithubURL:       "https://github.com/Jedway/jed-bga",                      // my github profile
 	}
 
 	// encode the response in JSON format
