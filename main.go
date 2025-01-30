@@ -11,9 +11,9 @@ import (
 
 // Response struct for JSON output
 type Response struct {
-	Email          string `json:"email"`
-	CurrentTime    string `json:"current_datetime"`
-	GitHubRepoURL  string `json:"github_url"`
+	Email         string `json:"email"`
+	CurrentTime   string `json:"current_datetime"`
+	GitHubRepoURL string `json:"github_url"`
 }
 
 func handler(w http.ResponseWriter, r *http.Request) {
@@ -34,9 +34,9 @@ func main() {
 
 	// CORS Middleware
 	corsHandler := cors.New(cors.Options{
-		AllowedOrigins:   []string{"*"},
-		AllowedMethods:   []string{"GET"},
-		AllowedHeaders:   []string{"Content-Type"},
+		AllowedOrigins: []string{"*"},
+		AllowedMethods: []string{"GET"},
+		AllowedHeaders: []string{"Content-Type"},
 	}).Handler(mux)
 
 	log.Println("Server started on :8080")
